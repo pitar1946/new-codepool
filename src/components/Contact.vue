@@ -90,6 +90,9 @@
 	cursor: pointer;
 }
 @media (min-width: 320px) and (max-width: 480px){
+	#contact{
+		  padding-top: 35px;
+	}
 	.heading h1{
 		font-size: 70px;
     margin-top: 40px;

@@ -6,7 +6,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
         <div class="collapse navbar-collapse" id="navbarDiv">
-            <div class="side-bar-logo">
+            <div class="side-bar-top-logo">
               <app-logo></app-logo>
             </div>  
             <ul class="navbar-nav ml-auto">
@@ -29,6 +29,10 @@
                     <a class="nav-link" href="#" v-scroll-to="'#contact'"  data-toggle="collapse" data-target=".navbar-collapse.show">contact</a>
                 </li>  
             </ul>
+            <div class="side-bar-bottom-logo">
+              <img class="" src='../assets/codepool.png'/>
+              <div>v.01/2019</div>
+            </div>
         </div>
 </nav> 
 
@@ -105,14 +109,20 @@ export default {
   .active{
      border-bottom: 3px solid #8060CC !important;
   }
-  .side-bar-logo{
+  .side-bar-top-logo{
+      display: none;
+  }
+  .side-bar-bottom-logo{
       display: none;
   }
 }
 @media only screen and (min-width: 480px) {
-   .side-bar-logo{
+  .side-bar-top-logo{
        display: none;
    } 
+  .side-bar-bottom-logo{
+      display: none;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -148,7 +158,6 @@ export default {
       margin-top: 45px;
   }
   .nav-item{
-      padding: 5px 0px;
       font-size: 24px;
   }
   .nav-item a{
@@ -161,12 +170,24 @@ export default {
   .navbar-logo{
         display: none;
       }
+ .side-bar-bottom-logo{
+       text-align: center;
+   }    
+  .side-bar-bottom-logo img {
+    height: 20px;
+    margin-top: 20px;
+  } 
+  .side-bar-bottom-logo div{
+      font-size: 12px;
+      margin-top: 5px;
+      letter-spacing: 1px;
+  }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .navbar-logo{
         display: none;
       }
-   .side-bar-logo{
+   .side-bar-top-logo{
        display: none;
    }   
 }

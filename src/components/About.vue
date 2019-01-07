@@ -87,6 +87,9 @@ span{
   margin-bottom: 10px;
 }
 @media (min-width: 320px) and (max-width: 480px) {
+ .about{
+   padding-top: 45px;
+ }
   .heading{
     margin-top: 20px;
   }
