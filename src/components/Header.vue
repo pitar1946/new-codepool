@@ -108,5 +108,51 @@ export default {
     margin-top: 100px;
   }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+    .header{
+    	height: 860px;
+      background: linear-gradient(180deg, #000000 30%, #8060CC 75%);
+    }
+    .heading {
+      margin-top: 60px;
+      margin-bottom: 55px;
+    }
+     .heading h1{
+    	height: 157px;
+      font-size: 72px;
+      font-weight: bold;
+  } 
+  .content{
+      padding: 0px 20px;
+  }
+  .button{
+    margin-top: 120px;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heading{
+    margin-top: 50px;
+    height: 130px;;
+  }
+  .heading h1{
+    font-size: 110px;
+  }
+  .content{
+     margin-top: 40px;
+  }
+  
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .heading{
+    height: 130px;;
+    margin-top: 60px;
+    margin-bottom: 10px !important;
+  }
+  .heading h1{
+    font-size: 110px;
+  }
+}
 
 </style>

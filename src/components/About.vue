@@ -129,5 +129,40 @@ span{
   }
 
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .heading{
+    margin-top: 50px;
+  }
+  .heading h1{
+    font-size: 56px;
+    line-height: 62px;
+    padding: 0px 20px;
+  }
+  .content{
+    height: 200px;
+    padding: 0px 20px;
+  }
+  .details{
+    padding: 0px 20px;
+  }
+  .details p{
+    width: 450px;
+  }
+  .technologies{
+    padding: 0px 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heading{
+    margin-top: 50px;
+    height: 300px;
+
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .heading{
+    height: 300px;
+  }
+}
 
 </style>

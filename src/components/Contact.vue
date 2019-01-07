@@ -87,6 +87,7 @@
   outline: none;
   background: #A488E5;
   color: #fff;
+	cursor: pointer;
 }
 @media (min-width: 320px) and (max-width: 480px){
 	.heading h1{
@@ -94,7 +95,7 @@
     margin-top: 40px;
 	}
 	.inputBox{
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 	.inputBox .input{
 		height: 30px;
@@ -104,6 +105,22 @@
 		height: 40px;
 	}
 
+}
+@media (min-width: 481px) and (max-width: 767px) {
+	.heading h1{
+		margin-top: 30px;
+		font-size: 72px;
+	}
+	.inputBox{
+		margin-bottom: 30px;
+	}
+	.inputBox .input{
+		height: 30px;
+		font-size: 20px;
+	}
+	#contact{
+		height: 430px;
+	}
 }
 
 </style>
