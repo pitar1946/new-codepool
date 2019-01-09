@@ -155,6 +155,9 @@ export default {
   }
 }
 @media(min-width: 768px) and (max-width: 1650px) and (orientation: landscape) {
+  .header{
+    height: 750px;
+  }
  .heading{
    margin-top: 30px;
  }
