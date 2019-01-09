@@ -132,6 +132,16 @@ span{
   }
 
 }
+@media (min-width: 481px) and (max-width: 520px) {
+   .heading{
+     height: 250px;
+   }
+   .content p{
+     font-size: 22px;
+     line-height: 30px;
+   }
+}
+
 @media (min-width: 481px) and (max-width: 767px) {
   .heading{
     margin-top: 50px;

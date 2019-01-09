@@ -46,20 +46,27 @@ export default {
      'app-logo': Logo
    },
     methods: {
-    showLogo: function(){
+    showNavbar: function(){
       document.addEventListener('scroll', function(){
       let logo = document.querySelector('.navbar-logo-circle');
+      let navbar = document.querySelector('.navbar');
       let yPosition = window.pageYOffset;
-         if( yPosition > 700 ){
-           logo.style.display = 'block'
-          } 
+         if(yPosition > 50){
+            navbar.style.marginTop = '0px';
+             if( yPosition > 700 ){
+               logo.style.display = 'block'; 
+            }
+            else{
+               logo.style.display = 'none';   
+            } 
+         }
          else{
-           logo.style.display = 'none'   
+           navbar.style.marginTop = '-50px';
           } 
         })
        },
      addClassActive: function() {
-        document.addEventListener('click', function () {
+        document.addEventListener('click', function () { 
 	      if (!event.target.classList.contains('nav-link')) return;
 	          event.target.classList.add('active');
 	          let links = document.querySelectorAll('.nav-link');
@@ -71,7 +78,7 @@ export default {
        }   
     },
     mounted() {
-      this.showLogo();
+      this.showNavbar();
       this.addClassActive();
     }
 }
@@ -80,6 +87,8 @@ export default {
  #nav{
    width: 100%;
    background-color: #000000 !important;
+   margin-top: -50px;
+   transition: 0.3s;
  }
  .nav-link {
    text-transform: uppercase !important;
@@ -103,14 +112,14 @@ export default {
 }
 @media only screen and (min-width: 900px) {
   #nav {
-     height: 50px !important;
-     
+     height: 50px !important;     
   }
   .active{
      border-bottom: 3px solid #8060CC !important;
   }
   .side-bar-top-logo{
       display: none;
+      
   }
   .side-bar-bottom-logo{
       display: none;
@@ -191,4 +200,5 @@ export default {
        display: none;
    }   
 }
+
 </style>

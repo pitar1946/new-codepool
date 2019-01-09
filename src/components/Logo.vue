@@ -30,6 +30,11 @@
       }
   
 }
+@media(min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .logo img{
+    margin-top: 50px;
+  }
+}
 </style>
 
 
