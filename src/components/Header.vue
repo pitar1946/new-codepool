@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 .header{
-    height: 800px;
+    height: 100vh;
     width: 100%;
     background-color: #0C0913;
 }
@@ -85,7 +85,7 @@ export default {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .header{
-    	height: 760px;
+    	height: 100vh;
       background: linear-gradient(180deg, #000000 30%, #8060CC 75%);
     }
    .heading{
@@ -154,5 +154,12 @@ export default {
     font-size: 110px;
   }
 }
-
+@media(min-width: 768px) and (max-width: 1650px) and (orientation: landscape) {
+ .heading{
+   margin-top: 30px;
+ }
+ .content{
+   margin-top: 30px;
+ }
+}
 </style>

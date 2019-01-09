@@ -69,7 +69,7 @@ export default {
 .footer-wrapper {
   width: 100%;
   background-color: #000000;
-  border-top: 7px solid #8B80F9;
+  border-top: 7px solid #A488E5;
   padding: 10px;
 }
 
@@ -182,6 +182,16 @@ export default {
 
   .footer .col2 .footer-logo {
     margin-top: 4%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .heading{
+    height: 300px;
+  }
+}
+@media(min-width: 881px) and (max-width: 1025px) and (orientation: landscape) {
+  .footer-logo-wrapper{
+    margin-top: 0px !important;
   }
 }
 </style>
